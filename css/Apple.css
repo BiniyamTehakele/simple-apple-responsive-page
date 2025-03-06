@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+.center {
+  background-color: blue;
+  text-align: center;
+  color: white;
+  padding: 2%;
+}
+.paracontainer p {
+  margin: 3%;
+}
+.image1 {
+  background-image: url(../images/home/macbook-pro.jpg);
+}
+.image2 {
+  background-image: url(../images/home/macbook-pro.jpg);
+}
+.allimage {
+  height: 367px;
+  width: 434px;
+  background-repeat: no-repeat;
+  margin: 5% auto;
+}
+.overt {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .paracontainer {
+    display: flex;
+  }
+  .para2 {
+    display: none;
+  }
+  .imagecontainer {
+    display: flex;
+    /* border: 3px solid red; */
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .overt {
+    display: block;
+  }
+
+  .para2 {
+    display: block;
+  }
+  .imagecontainer {
+    display: flex;
+    /* border: 3px solid red; */
+    width: 1050px;
+    margin-left: 10px;
+    margin: 0 auto;
+  }
+
+  .paracontainer {
+    /* border: 3px solid red; */
+    width: 1100px;
+    margin: 0 auto;
+  }
+  .paracontainer p {
+    background-color: green;
+  }
+  .image2 {
+    background-image: url(../images/home/iphone11-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .image2 {
+    text-align: center;
+  }
+  .image2 h1 {
+    font-size: 50px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+  .image2 .btn {
+    background-color: aqua;
+    border-radius: 10px;
+    width: 30%;
+    /* justify-content: center;
+        text-align: center; */
+    /* position: center; */
+    height: 10%;
+    margin-left: 70%;
+  }
+  .image2 .btn2 {
+    width: 20%;
+    margin-top: 2%;
+  }
+}
